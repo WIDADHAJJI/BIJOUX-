@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <mteta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Rendez-Vous</title>
+    <!--css-link--> 
+    <link rel="stylesheet" href="style web.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+        <link rel="stylesheet"  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+  
+       
+        
+</head>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family:sans-serif;
+        }
+        header{
+    position: fixed ;
+    top: 0;left: 0; right: 0;
+    background:#fff;
+    padding: 1rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+    
+}
+        contact{
+            min-height: 100vh;
+            background-color: beige;
+            padding: 50px;
+            text-align: center;
+            top: 50%;
+            right: 50%;
+        }
+        .container{
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .contact-wrapper{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 30px;
+        }
+        .contact-form{
+            text-align: left;
+        }
+        
+        .form-group{
+            margin-bottom: 20px;
+            }
+        input,textarea{
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            background-color: #f8f9fa;
+            color: #333;
+            }
+    
+        textarea:focus{
+            outline: none;
+            box-shadow: 0 0 8px #bbb;
+        }
+        button{
+            display: inline-block;
+            padding: 12px 24px;
+            background-color :gold ;
+            color: #fff;
+            border:none ;
+            cursor: pointer;
+            transition: 0.3s ease;
+            border-radius: 3rem;
+        }
+        button:hover{
+            background-color:darkgoldenrod;
+        }
+        .contact-info{
+            text-align: left;
+        }
+        .contacte h2{
+            color: #212529;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .contact-info p{
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 20px;
+        }
+        .contact-info i{
+            color:plum;
+            margin-right: 10px;
+        }
+        .contacter p{
+        color:#565656;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all .42s;
+}
+.contacter h2{
+    color: #212529;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-inform p{
+    color:#565656;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 2.5;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all .42s;
+
+}
+.contact-inform h3{
+    color: #212529;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+ 
+}
+.contact-inform i{
+    color:#565656;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 2.5;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: all .42s;
+
+}
+
+        
+        @media screen and (max-width: 768px){
+            .container{
+               padding: 20px;
+            }
+            .contact-wrapper{
+                grid-template-columns: 1fr;
+            }
+        }
+            
+        
+
+</style>
+<body>
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo"><img src="diam.jpg" alt=""></div>
+        <div class="search-box">
+            <form action="">
+                <input type="text" name="Search" placeholder="recherche">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <ul class="navmenu">
+            <li><a href="site.html" >acceuille</a></li>
+            <li><a href="Bague.html" >Bagues</a></li>
+            <li><a href="Montres.html" >Montres</a></li>
+            <li><a href="Collier.html" >Collier</a></li>
+            <li><a href="Boucles D'oreilles.html" >Boucles D'oreilles</a></li>
+
+           
+               
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <li class="fa fa-bars"></li>
+            </label>
+        </div>
+
+    </header>   
+
+
+
+
+
+
+
+    <section class="contacte">
+        <div class="Container">
+            <h2>Parlez nous de votre projet</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="Nom" placeholder="Votre Nom">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="Prénom" placeholder="Votre Prénom">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre email">
+                        </div>
+                        <div class="form-group">
+                            <input type="Téléphone" name="email" placeholder="Votre email">
+                        </div>
+                        <div class="form-group">
+                            <input type="Sujet" name="email" placeholder="Votre sujet">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="Message" placeholder="Votre message"></textarea>
+                        </div>
+                        <button type="submit" > Envoyer </button>
+                    </form>
+                </div>
+                
+                <div class="contacter">
+                    <h2>Nous contacter</h2>
+                    <p>Nous sommes déterminés à vous fournir un service client exceptionnel en répondant<br> rapidement et efficacement à toutes vos demandes de renseignements et de support.<br>
+                    <br>
+                    N'hésitez pas à nous contacter pour toute demande d'information ou pour prendre<br> rendez-vous avec l'un de nos maîtres joailliers qualifiés. Nous sommes disponibles <br>pourrépondre à vos questions par téléphone ou par email, ou pour organiser une visite privée
+                    dans l'un de nos showrooms.</p>
+                </div>
+                <div class="contact-inform">
+                    <h3>Soyez le plus précis possible dans vos demandes</h3>
+                    <i class='bx bxs-phone'>+33 1 44 54 51 74</i>
+                    <hr>
+                    <i class='bx bx-envelope' >Widaddiamond12@gmail.com</i>
+                    <hr>
+                    <p>ADRESSE:32 BOULEVARD HENRI IV,75004 PARIS</p>
+                    <h3>disponsibilité</h3>
+                    <p>Jeudi-Vendredi : 11:00AM - 18:00PM</p>
+                    
+                </div>
+                
+        
+            </section>
+
+
+
+
+
+            <!-- contact-section-->
+    <section class="contact">
+        <div class="contact-info">
+        <div class="first-info">
+            <h4>VISITEZ-NOUS</h4>
+            <p>32 BOULEVARD HENRI IV,75004 PARIS<br></p>
+            <p>Lundi au Mercredi-Fermé<br></p>
+            <p>Jeudi et Vendredi- 11:00 à 18:00<br></p>
+            <p>Samedi- 11:00 à 17:00</p>
+            <P>+33 1 44 54 51 74</P>
+            <P>Widaddiamond12@gmail.com</P>
+        </div>
+          
+        <div class="second-info">
+            <h4>LIENS UTILES</h4>
+            <p>à propos</p>
+            <P>Contact</P>
+            <P>NOS conditions générales de ventes</P>
+
+          
+        </div>
+        <div class="third-info">
+            <h4>SUIVEZ-NOUS</h4>
+            <a href="https://www.facebook.com/profile.php?id=100027975499523"><i class="bx bxl-facebook"></i>Facebook</a><br>
+            <a href="https://x.com/diamant_anvers?t=VKcEMPeHKTxrRUhSKvYh5Q&s=08"><i class="bx bxl-twitter"></i>twitter</a><br>
+            <a href="https://www.instagram.com/bijouterie.merveilleuse?igsh=MWxuOW9tMmZ3a3BrZA=="><i class="bx bxl-instagram"></i>Instagrame</a>
+
+        </div>
+       
+    </section>
+    <div class="end-text">
+        <p>Copyright &copy; 2023 almasa.wido/powred by powerla</p>
+    </div>
+
+
+
+
+    <script src="java.js"></script>
+
+
+
+    
+    
+
+                </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
